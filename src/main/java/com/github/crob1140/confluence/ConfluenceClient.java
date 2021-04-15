@@ -2,12 +2,14 @@ package com.github.crob1140.confluence;
 
 import com.github.crob1140.confluence.auth.AuthMethod;
 import com.github.crob1140.confluence.content.Content;
+import com.github.crob1140.confluence.content.TinyMCEContent;
 import com.github.crob1140.confluence.errors.ConfluenceRequestException;
 import com.github.crob1140.confluence.errors.ErrorResponse;
 import com.github.crob1140.confluence.requests.ConfluenceRequest;
 import com.github.crob1140.confluence.requests.CreateContentRequest;
 import com.github.crob1140.confluence.requests.GetContentRequest;
 import com.github.crob1140.confluence.requests.GetContentResponse;
+import com.github.crob1140.confluence.requests.GetTinyMCEContentRequest;
 import com.github.crob1140.confluence.requests.UpdateContentRequest;
 import java.util.HashMap;
 import java.util.List;
@@ -66,8 +68,11 @@ public class ConfluenceClient {
    * @throws ConfluenceRequestException if an error response is returned from the server
    */
   public List<Content> getContent(GetContentRequest request) throws ConfluenceRequestException {
-    return ((GetContentResponse) performRequest(request)).getResults();
-  }
+	    return ((GetContentResponse) performRequest(request)).getResults();
+	  }
+  public TinyMCEContent getTinyMCEContent(GetTinyMCEContentRequest request) throws ConfluenceRequestException {
+	    return ((TinyMCEContent) performRequest(request));
+	  }
 
   /**
    * This method sends a request to the Confluence Cloud server to update content the content as

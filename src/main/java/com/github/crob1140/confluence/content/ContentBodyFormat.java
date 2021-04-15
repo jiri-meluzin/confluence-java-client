@@ -32,5 +32,13 @@ public class ContentBodyFormat {
   public ContentBodyFormat(String value, String representation) {
     this.value = value;
     this.representation = representation;
-  }
+	}
+
+	public String getValue() {
+		return value;
+	}
+
+	public String getRepresentation() {
+		return representation;
+	}
 }
