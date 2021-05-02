@@ -10,6 +10,8 @@ import com.github.crob1140.confluence.requests.CreateContentRequest;
 import com.github.crob1140.confluence.requests.GetContentRequest;
 import com.github.crob1140.confluence.requests.GetContentResponse;
 import com.github.crob1140.confluence.requests.GetTinyMCEContentRequest;
+import com.github.crob1140.confluence.requests.TinyMCEMacroPlaceholderRequest;
+import com.github.crob1140.confluence.requests.TinyMCEMacroPlaceholderResponse;
 import com.github.crob1140.confluence.requests.UpdateContentRequest;
 import java.util.HashMap;
 import java.util.List;
@@ -72,6 +74,10 @@ public class ConfluenceClient {
 	  }
   public TinyMCEContent getTinyMCEContent(GetTinyMCEContentRequest request) throws ConfluenceRequestException {
 	    return ((TinyMCEContent) performRequest(request));
+	  }
+
+  public TinyMCEMacroPlaceholderResponse createTinyMCEPlaceHolder(TinyMCEMacroPlaceholderRequest request) throws ConfluenceRequestException {
+	    return  (TinyMCEMacroPlaceholderResponse)performRequest(request);
 	  }
 
   /**

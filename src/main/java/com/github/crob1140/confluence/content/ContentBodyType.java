@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum ContentBodyType {
   ANONYMOUS_EXPORT_VIEW("anonymous_export_view"),
+  EDITOR("editor"),
   EDITOR2("editor2"),
   EXPORT_VIEW("export_view"),
   STORAGE("storage"),

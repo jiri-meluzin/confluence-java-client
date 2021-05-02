@@ -16,6 +16,8 @@ public class ContentBody {
 	@JsonProperty
 	private ContentBodyFormat anonymous_export_view;
 	@JsonProperty
+	private ContentBodyFormat editor;
+	@JsonProperty
 	private ContentBodyFormat editor2;
 	@JsonProperty
 	private ContentBodyFormat export_view;
@@ -34,7 +36,9 @@ public class ContentBody {
 	public ContentBodyFormat getAnonymous_export_view() {
 		return anonymous_export_view;
 	}
-
+	public ContentBodyFormat getEditor() {
+		return editor;
+	}
 	public ContentBodyFormat getEditor2() {
 		return editor2;
 	}
@@ -67,6 +71,9 @@ public class ContentBody {
 		switch (type) {
 		case ANONYMOUS_EXPORT_VIEW:
 			this.anonymous_export_view = bodyFormat;
+			break;
+		case EDITOR:
+			this.editor = bodyFormat;
 			break;
 		case EDITOR2:
 			this.editor2 = bodyFormat;

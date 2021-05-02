@@ -31,6 +31,7 @@ public class TestUpdateContentRequestSuccess extends TestConfluenceRequestSucces
             .setId("123")
             .setVersion(2)
             .setType(StandardContentType.PAGE)
+            .setTitle("123")
             .build(),
         MediaType.APPLICATION_JSON_TYPE,
         HttpMethod.PUT,
@@ -53,6 +54,7 @@ public class TestUpdateContentRequestSuccess extends TestConfluenceRequestSucces
             .setBody(ContentBodyType.EXPORT_VIEW, "<html>TEST</html>")
             .setBody(ContentBodyType.STYLED_VIEW, "<html>TEST</html>")
             .setBody(ContentBodyType.ANONYMOUS_EXPORT_VIEW, "<html>TEST</html>")
+            .setTitle("456")
             .build(),
         MediaType.APPLICATION_JSON_TYPE,
         HttpMethod.PUT,
@@ -77,6 +79,7 @@ public class TestUpdateContentRequestSuccess extends TestConfluenceRequestSucces
             .addLabel("global-label")
             .addLabel("team-label", LabelPrefix.TEAM)
             .addLabel("my-label", LabelPrefix.MY)
+            .setTitle("456")
             .build(),
         MediaType.APPLICATION_JSON_TYPE,
         HttpMethod.PUT,
