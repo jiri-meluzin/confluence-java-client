@@ -2,14 +2,20 @@ package com.github.crob1140.confluence;
 
 import com.github.crob1140.confluence.auth.AuthMethod;
 import com.github.crob1140.confluence.content.Content;
+import com.github.crob1140.confluence.content.PageConfiguration;
 import com.github.crob1140.confluence.content.TinyMCEContent;
+import com.github.crob1140.confluence.content.UserSearchResponse;
 import com.github.crob1140.confluence.errors.ConfluenceRequestException;
 import com.github.crob1140.confluence.errors.ErrorResponse;
+import com.github.crob1140.confluence.requests.UpdatePageConfigurationRequest;
 import com.github.crob1140.confluence.requests.ConfluenceRequest;
 import com.github.crob1140.confluence.requests.CreateContentRequest;
 import com.github.crob1140.confluence.requests.GetContentRequest;
 import com.github.crob1140.confluence.requests.GetContentResponse;
+import com.github.crob1140.confluence.requests.GetPageConfigurationRequest;
 import com.github.crob1140.confluence.requests.GetTinyMCEContentRequest;
+import com.github.crob1140.confluence.requests.PageConfigurationResponse;
+import com.github.crob1140.confluence.requests.SearchUsersRequest;
 import com.github.crob1140.confluence.requests.TinyMCEMacroPlaceholderRequest;
 import com.github.crob1140.confluence.requests.TinyMCEMacroPlaceholderResponse;
 import com.github.crob1140.confluence.requests.UpdateContentRequest;
@@ -104,6 +110,16 @@ public class ConfluenceClient {
    */
   public Content createContent(CreateContentRequest request) throws ConfluenceRequestException {
     return (Content) performRequest(request);
+  }
+  public PageConfiguration updateConfiguration(UpdatePageConfigurationRequest request) throws ConfluenceRequestException {
+	  return (PageConfiguration) performRequest(request);
+  }
+
+  public PageConfigurationResponse getConfiguration(GetPageConfigurationRequest request) throws ConfluenceRequestException {
+	  return (PageConfigurationResponse) performRequest(request);
+  }
+  public UserSearchResponse searchUsers(SearchUsersRequest request) throws ConfluenceRequestException {
+	  return (UserSearchResponse) performRequest(request);
   }
 
   /**
