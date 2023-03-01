@@ -128,7 +128,7 @@ public class ConfluenceClient {
    * @param request The request to perform
    * @throws ConfluenceRequestException If the server responses with an error status code
    */
-  Object performRequest(ConfluenceRequest request) throws ConfluenceRequestException {
+  public Object performRequest(ConfluenceRequest request) throws ConfluenceRequestException {
     WebTarget endpointTarget = wikiTarget.path(request.getRelativePath());
     for (Entry<String, String> queryParam : request.getQueryParams().entrySet()) {
       endpointTarget = endpointTarget.queryParam(queryParam.getKey(), queryParam.getValue());
