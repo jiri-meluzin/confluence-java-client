@@ -7,7 +7,7 @@
 
     <groupId>io.github.jiri-meluzin</groupId>
     <artifactId>confluence-java-client</artifactId>
-    <version>1.0.VFEnhancements-SNAPSHOT</version>
+    <version>1.1.VFEnhancements-SNAPSHOT</version>
 
     <properties>
         <jackson.version>2.10.0.pr2</jackson.version>
