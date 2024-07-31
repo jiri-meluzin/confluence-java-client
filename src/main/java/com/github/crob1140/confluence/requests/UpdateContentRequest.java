@@ -9,13 +9,15 @@ import com.github.crob1140.confluence.content.LabelPrefix;
 import com.github.crob1140.confluence.content.Metadata;
 import com.github.crob1140.confluence.content.StandardContentType;
 import com.github.crob1140.confluence.content.Version;
+
+import jakarta.ws.rs.HttpMethod;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import javax.ws.rs.HttpMethod;
 
 /**
  * This class represents a request to update content in the Confluence Cloud server.

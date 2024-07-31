@@ -5,13 +5,15 @@ import com.github.crob1140.confluence.content.PageConfiguration;
 import com.github.crob1140.confluence.content.SortDirection;
 import com.github.crob1140.confluence.content.StandardContentType;
 import com.github.crob1140.confluence.content.expand.ExpandedContentProperties;
+
+import jakarta.ws.rs.HttpMethod;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import javax.ws.rs.HttpMethod;
 
 /**
  * This class represents a request to get content from the Confluence Cloud server.

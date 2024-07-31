@@ -9,10 +9,12 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 
 import com.github.crob1140.confluence.errors.ConfluenceRequestException;
 import com.github.tomakehurst.wiremock.junit.WireMockClassRule;
-import javax.ws.rs.HttpMethod;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
+
+import jakarta.ws.rs.HttpMethod;
+import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
+
 import org.junit.Assert;
 import org.junit.ClassRule;
 import org.junit.Rule;

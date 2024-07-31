@@ -1,7 +1,7 @@
 package com.github.crob1140.confluence.requests;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "img")
 public class TinyMCEMacroPlaceholderResponse {

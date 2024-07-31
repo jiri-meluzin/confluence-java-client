@@ -3,7 +3,8 @@ package com.github.crob1140.confluence.requests;
 import java.nio.charset.Charset;
 import java.util.Map;
 import java.util.Optional;
-import javax.ws.rs.core.MediaType;
+
+import jakarta.ws.rs.core.MediaType;
 
 /**
  * This class represents a HTTP request performed against the Confluence REST API

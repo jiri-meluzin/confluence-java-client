@@ -9,6 +9,9 @@ import com.github.crob1140.confluence.content.LabelPrefix;
 import com.github.crob1140.confluence.content.Metadata;
 import com.github.crob1140.confluence.content.StandardContentType;
 import com.github.crob1140.confluence.content.expand.ExpandedContentProperties;
+
+import jakarta.ws.rs.HttpMethod;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -16,7 +19,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import javax.ws.rs.HttpMethod;
 
 /**
  * This class represents a request to create content in the Confluence Cloud server.
