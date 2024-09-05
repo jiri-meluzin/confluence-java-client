@@ -1,9 +1,10 @@
 package com.github.crob1140.confluence.requests;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.crob1140.confluence.content.Content;
-import java.util.List;
 
 /**
  * This class represents the response that is returned for a {@link GetContentRequest}.

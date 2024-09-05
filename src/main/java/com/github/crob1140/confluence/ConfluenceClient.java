@@ -1,5 +1,10 @@
 package com.github.crob1140.confluence;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
 import com.github.crob1140.confluence.auth.AuthMethod;
 import com.github.crob1140.confluence.content.Content;
 import com.github.crob1140.confluence.content.PageConfiguration;
@@ -7,14 +12,6 @@ import com.github.crob1140.confluence.content.TinyMCEContent;
 import com.github.crob1140.confluence.content.UserSearchResponse;
 import com.github.crob1140.confluence.errors.ConfluenceRequestException;
 import com.github.crob1140.confluence.errors.ErrorResponse;
-import com.github.crob1140.confluence.requests.UpdatePageConfigurationRequest;
-
-import jakarta.ws.rs.client.Entity;
-import jakarta.ws.rs.client.Invocation;
-import jakarta.ws.rs.client.WebTarget;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
-
 import com.github.crob1140.confluence.requests.ConfluenceRequest;
 import com.github.crob1140.confluence.requests.CreateContentRequest;
 import com.github.crob1140.confluence.requests.GetContentRequest;
@@ -26,10 +23,13 @@ import com.github.crob1140.confluence.requests.SearchUsersRequest;
 import com.github.crob1140.confluence.requests.TinyMCEMacroPlaceholderRequest;
 import com.github.crob1140.confluence.requests.TinyMCEMacroPlaceholderResponse;
 import com.github.crob1140.confluence.requests.UpdateContentRequest;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
+import com.github.crob1140.confluence.requests.UpdatePageConfigurationRequest;
+
+import jakarta.ws.rs.client.Entity;
+import jakarta.ws.rs.client.Invocation;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 /**
  * This class sends requests to a Confluence Cloud server.

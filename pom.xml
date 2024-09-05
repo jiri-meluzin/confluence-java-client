@@ -7,8 +7,31 @@
 
     <groupId>io.github.jiri-meluzin</groupId>
     <artifactId>confluence-java-client</artifactId>
-    <version>1.1.VFEnhancements-SNAPSHOT</version>
+    <version>1.1.VFEnhancements</version>
+    <name>Confluence Java Client - fixed</name>
+    <description>A Java client for interacting with Atlassian Confluence.</description>
+    <url>https://github.com/jiri-meluzin/confluence-java-client</url>
 
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/jiri-meluzin/confluence-java-client</url>
+        <connection>scm:git:git://github.com/jiri-meluzin/confluence-java-client.git</connection>
+        <developerConnection>scm:git:ssh://github.com:jiri-meluzin/confluence-java-client.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>jiri-meluzin</id>
+            <name>Jiri Meluzin</name>
+            <email>meluzin.jirka@gmail.com</email>
+        </developer>
+    </developers>
     <properties>
         <jackson.version>2.17.2</jackson.version>
         <java.version>21</java.version>
@@ -41,7 +64,7 @@
 <plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.8</version>
+				<version>1.7.0</version>
 				<extensions>true</extensions>
 				<configuration>
 					<serverId>ossrh</serverId>

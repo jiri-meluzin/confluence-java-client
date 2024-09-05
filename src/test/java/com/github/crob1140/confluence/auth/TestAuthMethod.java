@@ -2,6 +2,7 @@ package com.github.crob1140.confluence.auth;
 
 import java.util.Arrays;
 import java.util.Collection;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

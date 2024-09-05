@@ -1,9 +1,10 @@
 package com.github.crob1140.confluence.content.expand;
 
-import com.github.crob1140.confluence.content.ContentBodyType;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+
+import com.github.crob1140.confluence.content.ContentBodyType;
 
 /**
  * This class represents the properties that can be expanded in a {@link

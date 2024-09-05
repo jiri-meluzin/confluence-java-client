@@ -1,6 +1,5 @@
 package com.github.crob1140.confluence.requests;
 
-import java.nio.charset.Charset;
 import java.util.Map;
 import java.util.Optional;
 

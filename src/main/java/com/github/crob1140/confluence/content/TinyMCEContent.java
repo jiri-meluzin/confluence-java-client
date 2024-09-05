@@ -1,7 +1,5 @@
 package com.github.crob1140.confluence.content;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TinyMCEContent {
@@ -36,7 +34,7 @@ private TinyMCEContent() {
 		this.permissions = builder.permissions;
 		this.syncRev = builder.syncRev;
 		this.syncRevSource = builder.syncRevSource;
-		this.title = title;
+		this.title = builder.title;
 	}
 
 	public String getAtlToken() {

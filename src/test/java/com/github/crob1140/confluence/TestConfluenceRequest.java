@@ -1,9 +1,10 @@
 package com.github.crob1140.confluence;
 
-import com.github.crob1140.confluence.requests.ConfluenceRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+
+import com.github.crob1140.confluence.requests.ConfluenceRequest;
 
 /**
  * This class represents a configurable instance of {@link ConfluenceRequest} that can be used for

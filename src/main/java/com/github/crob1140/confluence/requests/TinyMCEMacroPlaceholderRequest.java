@@ -4,15 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.ws.rs.HttpMethod;
 import jakarta.ws.rs.core.MediaType;
-
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 public class TinyMCEMacroPlaceholderRequest extends ConfluenceRequest {
 	private Request request = new Request();

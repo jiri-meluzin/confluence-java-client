@@ -16,7 +16,7 @@ public class Permissions {
 	private Permissions() {
 	}
 	public Permissions(Builder builder) {
-		this.editPermissionsGroups = builder.editPermissionsGroups;
+		this.viewPermissionsUsers = builder.viewPermissionsUsers;
 		this.viewPermissionsGroups = builder.viewPermissionsGroups;
 		this.editPermissionsGroups = builder.editPermissionsGroups;
 		this.editPermissionsUsers = builder.editPermissionsUsers;

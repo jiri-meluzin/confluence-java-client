@@ -1,16 +1,18 @@
 package com.github.crob1140.confluence.requests;
 
-import com.github.crob1140.confluence.content.ContentBodyType;
-import com.github.crob1140.confluence.content.ContentStatus;
-import com.github.crob1140.confluence.content.StandardContentType;
 import java.util.Arrays;
 import java.util.Collection;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+
+import com.github.crob1140.confluence.content.ContentBodyType;
+import com.github.crob1140.confluence.content.ContentStatus;
+import com.github.crob1140.confluence.content.StandardContentType;
 
 @RunWith(Parameterized.class)
 public class TestCreateContentRequestValidation {

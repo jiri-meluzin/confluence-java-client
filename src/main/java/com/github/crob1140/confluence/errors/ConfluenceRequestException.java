@@ -7,7 +7,11 @@ import java.util.Optional;
  */
 public class ConfluenceRequestException extends Exception {
 
-  private Integer statusCode;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7668742071789283524L;
+private Integer statusCode;
   private ErrorData data;
 
   /**

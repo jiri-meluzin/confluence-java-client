@@ -7,6 +7,11 @@ import static com.github.tomakehurst.wiremock.client.WireMock.post;
 import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
 import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 
+import org.junit.Assert;
+import org.junit.ClassRule;
+import org.junit.Rule;
+import org.junit.Test;
+
 import com.github.crob1140.confluence.errors.ConfluenceRequestException;
 import com.github.tomakehurst.wiremock.junit.WireMockClassRule;
 
@@ -14,11 +19,6 @@ import jakarta.ws.rs.HttpMethod;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.WebTarget;
 import jakarta.ws.rs.core.MediaType;
-
-import org.junit.Assert;
-import org.junit.ClassRule;
-import org.junit.Rule;
-import org.junit.Test;
 
 /**
  * This class performs tests against the methods of {@link ConfluenceClient}.

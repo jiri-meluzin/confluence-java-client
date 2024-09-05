@@ -1,19 +1,20 @@
 package com.github.crob1140.confluence.requests;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
 import com.github.crob1140.confluence.content.ContentBodyType;
 import com.github.crob1140.confluence.content.LabelPrefix;
 import com.github.crob1140.confluence.content.StandardContentType;
 
 import jakarta.ws.rs.HttpMethod;
 import jakarta.ws.rs.core.MediaType;
-
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
 public class TestUpdateContentRequestSuccess extends TestConfluenceRequestSuccess {

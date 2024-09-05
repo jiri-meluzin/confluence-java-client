@@ -1,7 +1,8 @@
 package com.github.crob1140.confluence;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * This class represents a simple response object that be used for testing purposes.

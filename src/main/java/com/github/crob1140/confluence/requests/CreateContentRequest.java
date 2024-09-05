@@ -1,5 +1,13 @@
 package com.github.crob1140.confluence.requests;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 import com.github.crob1140.confluence.content.Content;
 import com.github.crob1140.confluence.content.ContentBody;
 import com.github.crob1140.confluence.content.ContentBodyType;
@@ -11,14 +19,6 @@ import com.github.crob1140.confluence.content.StandardContentType;
 import com.github.crob1140.confluence.content.expand.ExpandedContentProperties;
 
 import jakarta.ws.rs.HttpMethod;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 /**
  * This class represents a request to create content in the Confluence Cloud server.

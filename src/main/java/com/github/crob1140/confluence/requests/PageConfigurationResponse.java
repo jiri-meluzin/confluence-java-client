@@ -2,8 +2,8 @@ package com.github.crob1140.confluence.requests;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.crob1140.confluence.content.PageConfiguration;
 
 @JsonInclude(Include.NON_NULL)

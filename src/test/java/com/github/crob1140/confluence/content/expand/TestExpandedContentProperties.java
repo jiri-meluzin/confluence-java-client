@@ -1,10 +1,12 @@
 package com.github.crob1140.confluence.content.expand;
 
-import com.github.crob1140.confluence.content.ContentBodyType;
 import java.util.HashSet;
 import java.util.Set;
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.github.crob1140.confluence.content.ContentBodyType;
 
 public class TestExpandedContentProperties {
 
